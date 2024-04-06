@@ -1,0 +1,35 @@
+* {
+  /* border: solid 1px red; */
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+.side {
+  flex: 1;
+  background-image: url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+}
+
+.side p {
+  text-align: center;
+  flex: 1;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+.form {
+  flex: 2;
+}
