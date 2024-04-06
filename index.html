@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
     </style>
+    <script src="java.js" defer></script>
 </head>
 
 <body>
@@ -57,7 +58,7 @@
                             <label for="password">Password <strong><span
                                         aria-label="required">*</span></strong></label><br>
                             <input type="password" name="password" id="password" placeholder="" required>
-                            <p class="passwordMatch">* Passwords do not match</p>
+                            <p id="passwordMatch">* Passwords do not match</p>
                         </li>
                         <li>
                             <label for="conf_password">Confirm Password <strong><span
@@ -66,12 +67,12 @@
                         </li>
                     </div>
                 </ul>
-            </form>
         </div>
         <div class="footer">
             <button type="submit"> Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
+        </form>
     </div>
 
 

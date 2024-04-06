@@ -106,8 +106,8 @@ a {
 }
 
 .header {
-  justify-content: flex-end;
   align-items: flex-start;
+  justify-content: flex-end;
 }
 
 .middle {
@@ -213,8 +213,18 @@ button:active {
   color: var(--accent-color);
 }
 
-.passwordMatch {
+#passwordMatch {
   font-size: 14px;
   font-weight: bold;
   color: var(--invalid-color);
+  display: none;
+}
+
+label {
+  font-weight: 500;
+}
+
+.footer p {
+  font-weight: 500;
+  margin-left: 3px;
 }
