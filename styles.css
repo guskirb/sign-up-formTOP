@@ -1,35 +1,170 @@
+@font-face {
+  font-family: "Sephir";
+  src: url(Sephir-Regular.otf);
+}
+
+.hind-madurai-light {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hind-madurai-regular {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hind-madurai-medium {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hind-madurai-semibold {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hind-madurai-bold {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   /* border: solid 1px red; */
   margin: 0;
   box-sizing: border-box;
   height: 100%;
+  font-family: "Hind Madurai", sans-serif;
 }
 
 body {
   display: flex;
 }
 
-.side {
+.left {
   flex: 1;
   background-image: url(images/background.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
   flex-flow: column;
+  justify-content: space-between;
 }
 
-.side p {
+.title {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 200px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title img {
+  height: 100px;
+}
+
+.left p {
   text-align: center;
   flex: 1;
   padding: 15px;
   color: white;
   text-decoration: none;
+  max-height: 50px;
+  font-size: 15px;
+  opacity: 0.6;
+  font-weight: 100;
 }
 
 a {
   color: white;
 }
 
-.form {
+.right {
   flex: 2;
+  display: flex;
+  flex-flow: column;
+}
+
+.header,
+.footer {
+  flex: 2;
+  box-sizing: border-box;
+  padding: 40px;
+  display: flex;
+  flex-flow: column;
+}
+
+.header {
+  justify-content: center;
+  align-items: flex-start;
+  flex: 2, 0;
+}
+
+.middle {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex: 3;
+}
+
+.footer {
+  gap: 20px;
+}
+
+input {
+  width: 150px;
+}
+
+ul div {
+  display: flex;
+  flex-flow: row;
+  height: 60px;
+  gap: 30px;
+}
+
+ul {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+}
+
+h1 {
+  color: white;
+  padding-top: 60px;
+  font-weight: 100;
+  font-size: 60px;
+  font-family: "Sephir", sans-serif;
+  font-style: italic;
+}
+
+h2 {
+  font-size: clamp(1.2rem, 1.4vw, 2rem);
+  width: 45vw;
+  height: 20vh;
+  font-weight: 600;
+}
+
+h3 {
+  height: 30px;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+label {
+  height: 30px;
+}
+
+button {
+  height: 50px;
+  width: 180px;
 }
