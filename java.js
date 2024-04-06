@@ -7,6 +7,8 @@ passwordInput.addEventListener("keyup", () => {
         passwordMsg.style.display = "none";
     } else {
         passwordMsg.style.display = "block";
+        passwordInput.style.border = "solid 2px var(--invalid-color)";
+        passwordInput.style.backgroundColor = "rgba(255, 232, 232, 0.712)";
     }
 });
 
@@ -15,5 +17,7 @@ passwordConf.addEventListener("keyup", () => {
         passwordMsg.style.display = "none";
     } else {
         passwordMsg.style.display = "block";
+        passwordConf.style.border = "solid 2px var(--invalid-color)";
+        passwordConf.style.backgroundColor = "rgba(255, 232, 232, 0.712)";
     }
 });
